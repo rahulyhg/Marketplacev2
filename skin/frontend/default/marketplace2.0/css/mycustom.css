@@ -3,3 +3,5 @@
 .header-top {display: block; width: 100%;}
 
 .header-bottom #nav {display: flex; justify-content: space-between;}
+
+a {text-decoration: :none;}
