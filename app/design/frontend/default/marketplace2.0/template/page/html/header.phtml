@@ -22,13 +22,41 @@
  * @package     base_default
  * @copyright   Copyright (c) 2014 Magento Inc. (http://www.magentocommerce.com)
  * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ * @modify mrtuvn
  */
 /**
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
+
+<script>
+    if (document.all && document.querySelector && !document.addEventListener) {
+    $$('body')[0].addClassName('ie8');
+    }
+    var is_iPad = navigator.userAgent.match(/iPad/i);
+    if(is_iPad !=null) $$('body')[0].addClassName('ipad');
+</script>
+
+<div class="toplinks-container">
+    <div class="toplinks">
+        <div class="topleft">
+            <p>
+            <span>5% OFF</span>
+                when you buy 2 or more products
+            </p>
+        </div>
+        <div class="topright">
+            <ul>
+                <li><a title="Login" href="javascript:void(0);"></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 <div class="header-container">
-    <div class="header">
+    <div class="header container">
         <?php if ($this->getIsHomePage()):?>
         <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
         <?php else:?>
@@ -41,6 +69,10 @@
             <?php echo $this->getChildHtml('store_language') ?>
         </div>
         <?php echo $this->getChildHtml('topContainer'); ?>
+
+
     </div>
 </div>
+<div class="floating-nav">
 <?php echo $this->getChildHtml('topMenu') ?>
+</div>
