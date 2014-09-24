@@ -1,0 +1,6 @@
+mklink /d "D:\xampp5\htdocs\mage\1901\dev\TestBlock\app\etc\modules\VES_TestBlock.xml" "D:\xampp5\htdocs\mage\1901\app\etc\modules\VES_TestBlock.xml"
+mklink /d "D:\xampp5\htdocs\mage\1901\dev\TestBlock\app\code\local\VES\TestBlock\" "D:\xampp5\htdocs\mage\1901\app\code\local\VES\TestBlock\"
+mklink /d "D:\xampp5\htdocs\mage\1901\dev\TestBlock\app\design\adminhtml\vnecoms\marketplacev2\layout\" "D:\xampp5\htdocs\mage\1901\app\design\adminhtml\vnecoms\marketplacev2\layout\"
+mklink /d "D:\xampp5\htdocs\mage\1901\dev\TestBlock\app\design\frontend\vnecoms\marketplacev2\layout\" "D:\xampp5\htdocs\mage\1901\app\design\frontend\vnecoms\marketplacev2\layout\"
+mklink /d "D:\xampp5\htdocs\mage\1901\dev\TestBlock\app\design\frontend\vnecoms\marketplacev2\template\" "D:\xampp5\htdocs\mage\1901\app\design\frontend\vnecoms\marketplacev2\template\"
+

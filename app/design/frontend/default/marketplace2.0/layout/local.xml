@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+  <default translate="label" module="page">
+    <reference name="head">
+    <!-- Adding Javascripts -->
+    <action method="addItem">
+      <type>skin_js</type>
+      <name>js/jquery-1.11.1.min.js</name>
+    </action>
+    <action method="addItem">
+      <type>skin_js</type>
+      <name>js/bootstrap.min.js</name>
+    </action>
+    <action method="addItem">
+      <type>skin_js</type>
+      <name>js/easySlider1.7.js</name>
+    </action>
+
+    <action method="addItem">
+      <type>skin_js</type>
+      <name>js/myjs.js</name>
+    </action>
+
+    <!-- Removing the styles.css -->
+    <action method="removeItem">
+      <type>skin_css</type><name>css/styles.css</name>
+    </action>
+    <!-- Adding Bootstrap Css -->
+    <action method="addItem">
+      <type>skin_css</type>
+      <stylesheet>css/bootstrap.min.css</stylesheet>
+    </action>
+    <!-- Adding the styles.css -->
+    <action method="addItem">
+      <type>skin_css</type>
+      <stylesheet>css/styles.css</stylesheet>
+    </action>
+    </reference>
+  </default>
+
+
+  <reference name="root">
+     <action method="setTemplate">
+       <template>page/1column.phtml</template>
+     </action>
+  </reference>
+
+  <reference name="content">
+    <block type="cms/page" name="home_custom_block1" template="page/html/test.phtml"></block>
+  </reference>
+
+  <cms_index_index>
+    <block type="cms/block" name="home_custom_slider">
+            <action method="setBlockId"><block_id>home_custom_slider</block_id></action>
+    </block>
+
+    <reference name="content">
+        <block type="core/template" name="bootstrap_block_test" after="-" template="page/html/bootstrap.phtml">
+
+        </block>
+    </reference>
+
+  </cms_index_index>
+
+  <!-- <reference name="header">
+    <block type="checkout/cart_sidebar" name="top_cart" template="checkout/cart/topcart.phtml" before="-">
+
+      <action method="addItemRender"><type>simple</type><block>checkout/ cart_item_renderer</block><template>checkout/cart/sidebar/default. phtml</template></action>
+
+      <action method="addItemRender"><type>grouped</ type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>
+      <action method="addItemRender"><type>configurable</ type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/sidebar/default.phtml</template></action>
+
+      <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout"><label>Shopping Cart Sidebar Extra Actions</label>
+      </block>
+   </block>
+  </reference> -->
+
+  <!-- <catalog_product_view>
+    <reference name="content">
+      <block type="core/template" name="bootstrap_block_test" alias="bootstrap_block_test" after="-" template="page/html/boostrap.phtml" ></block>
+    </reference>
+  </catalog_product_view> -->
+</layout>
