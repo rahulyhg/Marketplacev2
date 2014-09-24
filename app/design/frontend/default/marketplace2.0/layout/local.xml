@@ -35,6 +35,11 @@
       <type>skin_css</type>
       <stylesheet>css/styles.css</stylesheet>
     </action>
+
+    <action method="addItem">
+      <type>skin_css</type>
+      <stylesheet>css/mycustom.css</stylesheet>
+    </action>
     </reference>
   </default>
 
