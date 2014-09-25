@@ -1,6 +1,6 @@
 .header-container {background: none; background: #f8f8f8; width: 100%;}
 a {text-decoration: none;}
-.toplinks-container {width: 100%; display: block; background: none;}
+
 .toplinks-container .topleft p {float: left; margin-right:20px; font-size: 13px; line-height: 35px; text-transform: uppercase;}
 
 body {background: none;}
@@ -11,12 +11,35 @@ body {background: none;}
 .main-container {}
 
 .main {background: none;}
-.header, .main, #nav, .footer {}
+.header, .main, #nav, .footer {width: 100%;}
 .header .quick-access {width: 100%; padding :0 ; margin: 0 auto; display: block; }
 .header .quick-access p.welcome-msg {float: left;}
 
 
 .footer-container {border-top: 0px;}
+.toplinks-container {width: 100%; display: block; background: none; overflow: hidden; background: #f8f8f8;}
+.toplinks-container .toplinks {margin: 0 auto; position: relative;}
+.toplinks-container .topleft {float: left; width: 50%; display: block;}
+.toplinks-container .topright {float: left; width: 50%;}
+.toplinks .topright p.welcome-msg {display: inline-block; float: left; margin-right: 15px;}
+.toplinks .topright .links {display: inline-block; float: left;}
+.toplinks .topright p.welcome-msg {display: inline-block;}
+
+.form-search label {display: none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Design for a width of 960-1280 px
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
