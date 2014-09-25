@@ -1,7 +1,142 @@
 .header-container {background: none; background: #f8f8f8; width: 100%;}
+a {text-decoration: none;}
+.toplinks-container {width: 100%; display: block; background: none;}
+.toplinks-container .topleft p {float: left; margin-right:20px; font-size: 13px; line-height: 35px; text-transform: uppercase;}
 
-.header-top {display: block; width: 100%;}
+body {background: none;}
 
-.header-bottom #nav {display: flex; justify-content: space-between;}
+.header-container {background: url("")repeat-x scroll 0 0 transparent; min-height: 150px;}
+.nav-container {float: right; width: 40%; background: none;}
+.nav li:hover a {border: 1px solid #ffffff; border-radius: 7px 7px 7px 7px; display: block;}
+.main-container {background: url("../images/main_background3.jpg") repeat scroll 0 0 transparent;}
 
-a {text-decoration: :none;}
+.main {background: none;}
+.header, .main, #nav, .footer {}
+.header .quick-access {width: 100%; padding :0 ; margin: 0 auto; display: block; }
+.header .quick-access p.welcome-msg {float: left;}
+
+
+.footer-container {border-top: 0px; background: url("") repeat-x scroll 0 0 transparent;}
+
+/* Design for a width of 960-1280 px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 960px <= width < 1280px */
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+
+}
+
+
+/* Design for a width of 960-1024 px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 960px <= width < 1024px */
+@media only screen and (min-width: 960px) and (max-width: 1023px) {
+	
+	
+}
+
+
+
+/* Mobile, small old desktop - design for a width of less than 960px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 960px */
+@media only screen and (max-width: 959px) {
+	
+	
+}
+
+
+
+/* Tablet (Portrait) - design for a width of 768px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 768px <= width < 960px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+
+}
+
+
+/* All desktop - design for a width of 768px and wider
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 768px <= width */
+@media only screen and (min-width: 768px) {
+    
+	/* .page-chat .block.chat {width: 99%;} */
+}
+
+
+/* All mobile - design for a width of less than 768px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 768px */
+@media only screen and (max-width: 767px) {
+	
+}
+/* end: width < 768px */
+
+
+/* Mobile (Landscape) - design for a width of 480px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 480px <= width < 768px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	
+
+}
+
+
+/* Additional break-point:
+   Mobile (Landscape, iPhone 4 Portrait) - design for a width of 640px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+/* 640px <= width < 768px */
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+	
+	
+}
+
+
+/* All small mobile - design for a width of less than 480px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 480px */
+@media only screen and (max-width: 479px) {
+	
+	
+	
+}
+
+
+/* Mobile (Portrait) - design for a width of 320px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* 320px <= width < 480px */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	
+	
+}
+
+
+/* Mobile (Portrait) - design for a width of 240px
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+*/
+
+/* width < 320px */
+@media only screen and (max-width: 319px) {
+	
+	
+}
