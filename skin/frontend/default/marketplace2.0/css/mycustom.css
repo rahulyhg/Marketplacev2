@@ -5,10 +5,10 @@ a {text-decoration: none;}
 
 body {background: none;}
 
-.header-container {background: url("")repeat-x scroll 0 0 transparent; min-height: 150px;}
+.header-container {}
 .nav-container {float: right; width: 40%; background: none;}
 .nav li:hover a {border: 1px solid #ffffff; border-radius: 7px 7px 7px 7px; display: block;}
-.main-container {background: url("../images/main_background3.jpg") repeat scroll 0 0 transparent;}
+.main-container {}
 
 .main {background: none;}
 .header, .main, #nav, .footer {}
@@ -16,7 +16,7 @@ body {background: none;}
 .header .quick-access p.welcome-msg {float: left;}
 
 
-.footer-container {border-top: 0px; background: url("") repeat-x scroll 0 0 transparent;}
+.footer-container {border-top: 0px;}
 
 /* Design for a width of 960-1280 px
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

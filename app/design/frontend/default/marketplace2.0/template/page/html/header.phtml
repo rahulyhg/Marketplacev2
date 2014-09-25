@@ -46,12 +46,11 @@
             </p>
         </div>
         <div class="topright">
-            <ul>
-                <li><a title="Login" href="javascript:void(0);"></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
+           
+			<p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+            <?php echo $this->getChildHtml('topLinks') ?>
+			
+			<?php echo $this->getChildHtml('topSearch') ?>
         </div>
     </div>
 </div>
@@ -63,10 +62,12 @@
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
         <div class="quick-access">
-            <?php echo $this->getChildHtml('topSearch') ?>
-            <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
-            <?php echo $this->getChildHtml('topLinks') ?>
-            <?php echo $this->getChildHtml('store_language') ?>
+            <?php //echo $this->getChildHtml('topSearch') ?>
+            <!--<p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getAdditionalHtml() ?></p>-->
+            <?php //echo $this->getChildHtml('topLinks') ?>
+			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-link-static')->toHtml() ?>
+
+            <?php //echo $this->getChildHtml('store_language') ?>
         </div>
         <?php echo $this->getChildHtml('topContainer'); ?>
 
