@@ -1,4 +1,3 @@
-.header-container {background: none; background: #f8f8f8; width: 100%;}
 a {text-decoration: none;}
 
 .toplinks-container .topleft p {float: left; margin-right:20px; font-size: 13px; line-height: 35px; text-transform: uppercase;}
@@ -9,9 +8,9 @@ a {text-decoration: none;}
 
 .footer-container {border-top: 0px;}
 .toplinks-container {width: 100%; float: left; display: block; background: repeat scroll 0 0 #231f20; padding: 5px 0;}
-.toplinks-container .toplinks {margin: 0 auto; position: relative;}
-.toplinks-container .topleft {float: left; width: 50%; display: block;}
-.toplinks-container .topright {float: left; width: 50%;}
+.toplinks-container .toplinks {margin: 0 auto; position: relative; color: #ffde00;}
+.toplinks-container .topleft {float: left; width: 40%; display: block;}
+.toplinks-container .topright {float: left; width: 60%;}
 
 .toplinks .topleft p {font-size: 13px; color: #737373;}
 .toplinks .topleft p span {font-size: 13px; color: #ffde00;}
@@ -23,11 +22,21 @@ a {text-decoration: none;}
 .form-search label {display: none;}
 .toplinks .form-search {background: #737373; float: left; border-radius: 6px; padding: 1px 15px 1p 5px;}
 .toplinks .form-search .input-text {background: none; color: #737373; text-align: left; border: medium none; border-radius:9px; color: #ffd800; font-size: 12px; line-height: 30px; width: 190px;}
+.toplinks .form-search button.button > span {padding: 7px 11px;border:none; text-indent: -99999px; background: url("../images/marketv2/icon-search.png") no-repeat scroll left center transparent;}
 
 
+.header-container {background: none; background: #f8f8f8; width: 100%; overflow: hidden; float: left;}
+.header-container .logo {float: left; margin: 13px 0;}
+.header-container .quick-access {float: right; max-width: 800px;}
+.header-container .quick-access li{float: left; display: inline-block; margin-right: 10px; padding-left: 14px; margin: 20px 15px 10px 0;}
+.header-container .quick-access ul li{border-right: 1px solid #e7e7e7; font-size: 12px; font-weight: 500; padding: 17px 20px 17px 44px; text-transform: uppercase; text-shadow: 0 0 0 #666;}
 
+.header-container .quick-access ul li.first{}
+.header-container .quick-access ul li.second{}
+.header-container .quick-access ul li.third{b}
+.header-container .quick-access ul li.last{}
 
-
+.header {display: block; width: auto; max-width: 1200px;}
 
 
 
