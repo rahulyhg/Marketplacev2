@@ -1,5 +1,5 @@
 a {text-decoration: none;}
-
+body {line-height: 1.35; font-family: "Open Sans";}
 .toplinks-container .topleft p {float: left; margin-right:20px; font-size: 13px; line-height: 35px; text-transform: uppercase;}
 
 .header .quick-access {width: 100%; padding :0 ; margin: 0 auto; display: block; }
@@ -28,16 +28,25 @@ a {text-decoration: none;}
 .header-container {background: none; background: #f8f8f8; width: 100%; overflow: hidden; float: left;}
 .header-container .logo {float: left; margin: 13px 0;}
 .header-container .quick-access {float: right; max-width: 800px;}
-.header-container .quick-access li{float: left; display: inline-block; margin-right: 10px; padding-left: 14px; margin: 20px 15px 10px 0;}
-.header-container .quick-access ul li{border-right: 1px solid #e7e7e7; font-size: 12px; font-weight: 500; padding: 17px 20px 17px 44px; text-transform: uppercase; text-shadow: 0 0 0 #666;}
+.header-container .quick-access li{line-height:11px; float: left; display: inline-block; margin-right: 10px; padding-left: 14px; margin: 20px 15px 10px 0;}
+.header-container .quick-access ul li{border-right: 1px solid #e7e7e7; text-align: left; font-size: 12px; font-weight: 500; padding: 17px 20px 17px 44px; text-transform: uppercase; text-shadow: 0 0 0 #666;}
+.header-container .quick-access ul {float: left; width: 100%; overflow:hidden; padding: 0; margin: 0;}
+.header-container .quick-access ul li p {color: #333;}
+.header-container .quick-access ul li span {color: #878787;}
 
-.header-container .quick-access ul li.first{}
-.header-container .quick-access ul li.second{}
-.header-container .quick-access ul li.third{}
-.header-container .quick-access ul li.last{}
+.header-container .quick-access ul li.first{display: inline-block; background: url("../images/marketv2/no1.png") no-repeat scroll left center transparent;}
+.header-container .quick-access ul li.second{display: inline-block; background: url("../images/marketv2/most-reliable.png") no-repeat scroll left center transparent;}
+.header-container .quick-access ul li.third{display: inline-block; background: url("../images/marketv2/most-resonable.png") no-repeat scroll left center transparent;}
+.header-container .quick-access ul li.last{border-right: none; display:inline-block; background: url("../images/marketv2/items.png") no-repeat scroll left center transparent;}
 
-.header {display: block; width: auto; max-width: 1200px;}
+.header {display: block; width: auto; max-width: 1200px; padding: 0;}
 
+
+.floating-nav {float: left; width:100%; display: block; background: #f8f8f8; }
+.floating-nav .nav-container {background: none; height: 48px;}
+.floating-nav #nav {width: 100%; margin:0 auto; text-align: center; float: left; display: flex;}
+.floating-nav #nav > li {padding: 15px 3px 11px 3px;}
+.floating-nav #nav > li a{font-size: 15px; font-weight: 500; color: #464646; text-decoration: none;}
 
 
 
