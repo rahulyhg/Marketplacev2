@@ -1,5 +1,12 @@
 a {text-decoration: none;}
 body {line-height: 1.35; font-family: "Open Sans"; background: none;}
+
+
+.header {display: block; width: auto; max-width: 1200px; padding: 0;}
+.main {background: none; width: auto; display:block; padding: 0;}
+.main-container {background: none;}
+
+
 .toplinks-container .topleft p {float: left; margin-right:20px; font-size: 13px; line-height: 35px; text-transform: uppercase;}
 
 .header .quick-access {width: 100%; padding :0 ; margin: 0 auto; display: block; }
@@ -39,8 +46,6 @@ body {line-height: 1.35; font-family: "Open Sans"; background: none;}
 .header-container .quick-access ul li.third{display: inline-block; background: url("../images/marketv2/most-resonable.png") no-repeat scroll left center transparent;}
 .header-container .quick-access ul li.last{border-right: none; display:inline-block; background: url("../images/marketv2/items.png") no-repeat scroll left center transparent;}
 
-.header {display: block; width: auto; max-width: 1200px; padding: 0;}
-.main {background: none; width: auto; display:block; padding: 0;}
 
 .floating-nav {float: left; width:100%; display: block; background: #f8f8f8; border-top: 1px solid  #e1dcdc; padding-bottom: 3px; }
 .floating-nav .nav-container {background: none; padding: 0;}
@@ -53,9 +58,17 @@ body {line-height: 1.35; font-family: "Open Sans"; background: none;}
 
 
 
+#maincontent {float: left; width: 100%;}
 
 
 
+/* footer %%%%%%%%%%% */
+.footer-container {float: left; width: 100%;}
+.footer {width: auto; padding-bottom: 0; padding:0;}
+.top-footer {background: url("../images/marketv2/bg-footer.png") repeat scroll transparent;
+	float: left; position: relative; width: 100%;
+}
+.bottom-footer{background: none repeat scroll 0 0 #1c191b;}
 
 
 /* Design for a width of 960-1280 px
