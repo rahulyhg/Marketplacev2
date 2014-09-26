@@ -59,30 +59,8 @@
             <action method="setBlockId"><block_id>home_custom_slider</block_id></action>
     </block>
 
-    <reference name="content">
-        <block type="core/template" name="bootstrap_block_test" after="-" template="page/html/bootstrap.phtml">
-
-        </block>
-    </reference>
 
   </cms_index_index>
 
-  <!-- <reference name="header">
-    <block type="checkout/cart_sidebar" name="top_cart" template="checkout/cart/topcart.phtml" before="-">
 
-      <action method="addItemRender"><type>simple</type><block>checkout/ cart_item_renderer</block><template>checkout/cart/sidebar/default. phtml</template></action>
-
-      <action method="addItemRender"><type>grouped</ type><block>checkout/cart_item_renderer_grouped</block><template>checkout/cart/sidebar/default.phtml</template></action>
-      <action method="addItemRender"><type>configurable</ type><block>checkout/cart_item_renderer_configurable</block><template>checkout/cart/sidebar/default.phtml</template></action>
-
-      <block type="core/text_list" name="cart_sidebar.extra_actions" as="extra_actions" translate="label" module="checkout"><label>Shopping Cart Sidebar Extra Actions</label>
-      </block>
-   </block>
-  </reference> -->
-
-  <!-- <catalog_product_view>
-    <reference name="content">
-      <block type="core/template" name="bootstrap_block_test" alias="bootstrap_block_test" after="-" template="page/html/boostrap.phtml" ></block>
-    </reference>
-  </catalog_product_view> -->
 </layout>

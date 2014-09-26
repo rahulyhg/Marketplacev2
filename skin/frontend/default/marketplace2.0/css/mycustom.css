@@ -1,5 +1,5 @@
 a {text-decoration: none;}
-body {line-height: 1.35; font-family: "Open Sans";}
+body {line-height: 1.35; font-family: "Open Sans"; background: none;}
 .toplinks-container .topleft p {float: left; margin-right:20px; font-size: 13px; line-height: 35px; text-transform: uppercase;}
 
 .header .quick-access {width: 100%; padding :0 ; margin: 0 auto; display: block; }
@@ -40,13 +40,15 @@ body {line-height: 1.35; font-family: "Open Sans";}
 .header-container .quick-access ul li.last{border-right: none; display:inline-block; background: url("../images/marketv2/items.png") no-repeat scroll left center transparent;}
 
 .header {display: block; width: auto; max-width: 1200px; padding: 0;}
+.main {background: none; width: auto; display:block; padding: 0;}
 
+.floating-nav {float: left; width:100%; display: block; background: #f8f8f8; border-top: 1px solid  #e1dcdc; padding-bottom: 3px; }
+.floating-nav .nav-container {background: none; padding: 0;}
+.floating-nav #nav {justify-content: space-between; width: 100%; margin:0 auto; text-align: center; float: left; display: flex; flex-direction: row;}
+.floating-nav #nav > li {padding: 13px 3px 13px 3px; border-top: 3px solid #f8f8f8;}
+.floating-nav #nav > li:hover {border-top: 3px solid #ffde00;}
 
-.floating-nav {float: left; width:100%; display: block; background: #f8f8f8; }
-.floating-nav .nav-container {background: none; height: 48px;}
-.floating-nav #nav {width: 100%; margin:0 auto; text-align: center; float: left; display: flex;}
-.floating-nav #nav > li {padding: 15px 3px 11px 3px;}
-.floating-nav #nav > li a{font-size: 15px; font-weight: 500; color: #464646; text-decoration: none;}
+.floating-nav #nav > li a{font-size: 15px; font-weight: 600; color: #464646; text-decoration: none; padding: 0;}
 
 
 
