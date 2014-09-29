@@ -38,40 +38,50 @@
 </script>
 
 <div class="toplinks-container">
-    <div class="toplinks container">
-        <div class="topleft col-sm-6">
-            <p>
-            <span>5% OFF</span>
-                when you buy 2 or more products
-            </p>
-        </div>
-        <div class="topright col-sm-6">
+    <div class="container">
+        <div class="row">
+            <div class="toplinks">
+                <div class="topleft col-sm-6">
+                    <p>
+                    <span>5% OFF</span>
+                        when you buy 2 or more products
+                    </p>
+                </div>
+                <div class="topright col-sm-6 clearfix ">
 
-			<p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
-            <?php echo $this->getChildHtml('topLinks') ?>
+        			<p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+                    <?php echo $this->getChildHtml('topLinks') ?>
 
-			<?php echo $this->getChildHtml('topSearch') ?>
+        			<?php echo $this->getChildHtml('topSearch') ?>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <div class="header-container">
-    <div class="header container">
-        <?php if ($this->getIsHomePage()):?>
-        <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-        <?php else:?>
-        <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-        <?php endif?>
-        <div class="quick-access col-sm-12">
-            <?php //echo $this->getChildHtml('topSearch') ?>
-            <!--<p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getAdditionalHtml() ?></p>-->
-            <?php //echo $this->getChildHtml('topLinks') ?>
-			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-link-static')->toHtml() ?>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="header">
+                    <?php if ($this->getIsHomePage()):?>
+                    <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+                    <?php else:?>
+                    <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                    <?php endif?>
+                    <div class="quick-access clearfix">
+                        <?php //echo $this->getChildHtml('topSearch') ?>
+                        <!--<p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getAdditionalHtml() ?></p>-->
+                        <?php //echo $this->getChildHtml('topLinks') ?>
+            			<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('header-link-static')->toHtml() ?>
 
-            <?php //echo $this->getChildHtml('store_language') ?>
+                        <?php //echo $this->getChildHtml('store_language') ?>
+                    </div>
+                    <?php echo $this->getChildHtml('topContainer'); ?>
+
+
+                </div>
+            </div>
         </div>
-        <?php echo $this->getChildHtml('topContainer'); ?>
-
-
     </div>
 </div>
 <div class="floating-nav">

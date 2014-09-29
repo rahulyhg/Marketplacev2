@@ -50,14 +50,22 @@
         <!-- additional block -->
 
         <section id="maincontent">
-        <div class="container main-container col1-layout">
-            <div class="main">
-                <?php echo $this->getChildHtml('breadcrumbs') ?>
-                <div class="col-main row col-md-12">
-                    <?php echo $this->getChildHtml('global_messages') ?>
-                    <?php echo $this->getChildHtml('content') ?>
+        <div class="main-container col1-layout">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main">
+                            <div class="row">
+                                <?php echo $this->getChildHtml('breadcrumbs') ?>
+                                <div class="col-main col-xs-12">
+                                    <?php echo $this->getChildHtml('global_messages') ?>
+                                    <?php echo $this->getChildHtml('content') ?>
 
-                    <?php echo $this->getChildHtml('home_custom_block1') ?>
+                                    <?php echo $this->getChildHtml('home_custom_block1') ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

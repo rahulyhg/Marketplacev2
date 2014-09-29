@@ -33,9 +33,11 @@
 ?>
 <?php $_menu = $this->getHtml('level-top') ?>
 <?php if($_menu): ?>
-<div class="nav-container col-sm-12 col-sm-offset-3">
+<div class="row nav-container">
+  <div class="col-sm-12">
     <ul id="nav">
         <?php echo $_menu ?>
     </ul>
+  </div>
 </div>
 <?php endif ?>
