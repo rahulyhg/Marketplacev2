@@ -70,6 +70,21 @@ body {line-height: 1.35; font-family: "Open Sans"; background: none;}
 }
 .bottom-footer{background: none repeat scroll 0 0 #1c191b;}
 
+.footer-wrap > ul {
+  float: left; width: 100%;
+}
+.footer-wrap > ul li {display: inline-block;}
+.footer-wrap > ul li h3 {
+  color: #dfdfdf;
+  font-size: 16px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  line-height: 15px;
+}
+
+
+
 
 /* Design for a width of 960-1280 px
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
