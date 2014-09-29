@@ -27,7 +27,9 @@
 <div class="footer-container">
     <div class="footer container">
         <div class="top-footer">
-          <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('top-footer-static-block')->toHtml() ?>
+
+          <div class="row">
+             <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('top-footer-static-block')->toHtml() ?>
         </div>
         <div class="bottom-footer">
           <?php echo $this->getChildHtml() ?>

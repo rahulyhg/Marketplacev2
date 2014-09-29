@@ -30,6 +30,10 @@
       <type>skin_css</type>
       <stylesheet>css/bootstrap.min.css</stylesheet>
     </action>
+    <action method="addItem">
+      <type>skin_css</type>
+      <stylesheet>css/bootstrap-theme.min.css</stylesheet>
+    </action>
     <!-- Adding the styles.css -->
     <action method="addItem">
       <type>skin_css</type>
@@ -55,6 +59,8 @@
 
 
     </reference>
+
+
   </default>
 
 

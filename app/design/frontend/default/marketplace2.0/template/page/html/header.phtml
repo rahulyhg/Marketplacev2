@@ -39,13 +39,13 @@
 
 <div class="toplinks-container">
     <div class="toplinks container">
-        <div class="topleft col-6-sm col-3-xs">
+        <div class="topleft col-sm-6">
             <p>
             <span>5% OFF</span>
                 when you buy 2 or more products
             </p>
         </div>
-        <div class="topright col-6-sm col-3-xs">
+        <div class="topright col-sm-6">
 
 			<p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
             <?php echo $this->getChildHtml('topLinks') ?>
@@ -61,7 +61,7 @@
         <?php else:?>
         <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
         <?php endif?>
-        <div class="quick-access col-12-md col-12-xs">
+        <div class="quick-access col-sm-12">
             <?php //echo $this->getChildHtml('topSearch') ?>
             <!--<p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php //echo $this->getAdditionalHtml() ?></p>-->
             <?php //echo $this->getChildHtml('topLinks') ?>
