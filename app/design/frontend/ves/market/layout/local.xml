@@ -11,20 +11,15 @@
       <type>skin_js</type>
       <name>js/bootstrap.min.js</name>
     </action>
-    <action method="addItem">
+    <!-- <action method="addItem">
       <type>skin_js</type>
       <name>js/easySlider1.7.js</name>
-    </action>
-
-    <action method="addItem">
-      <type>skin_js</type>
-      <name>js/myjs.js</name>
-    </action>
+    </action> -->
 
     <!-- Removing the styles.css -->
-    <action method="removeItem">
+    <!-- <action method="removeItem">
       <type>skin_css</type><name>css/styles.css</name>
-    </action>
+    </action> -->
     <!-- Adding Bootstrap Css -->
     <action method="addItem">
       <type>skin_css</type>
@@ -44,18 +39,6 @@
       <type>skin_css</type>
       <stylesheet>css/mycustom.css</stylesheet>
     </action>
-
-    <!-- <action method="addItem">
-      <type>skin_js</type>
-      <name>js/jquery.onepage-scroll.js</name>
-    </action> -->
-
-    <!--
-    <action method="addItem">
-      <type>skin_css</type>
-      <name>css/onepage-scroll.css</name>
-    </action> -->
-
 
 
     </reference>

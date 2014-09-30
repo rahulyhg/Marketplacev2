@@ -1,0 +1,4 @@
+@media only screen and (max-width: 767px) {
+  .col-main {width: 100%;}
+  .sidebar {width: 100%;}
+}
