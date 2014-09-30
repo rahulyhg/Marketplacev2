@@ -2,3 +2,6 @@
   .col-main {width: 100%;}
   .sidebar {width: 100%;}
 }
+
+
+.navbar-default {max-width: 940px; margin-left: auto; margin-right: auto; background-color: auto;}
