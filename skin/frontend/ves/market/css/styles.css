@@ -100,9 +100,9 @@ ul,ol         { list-style:none; }
 .main {max-width:900px; margin:0 auto; min-height:400px; padding:25px 25px 80px; background:#fffffe url(../images/bkg_main2.gif) 0 0 no-repeat; text-align:left; }
 
 /* Base Columns */
-.col-left { float:left; width:195px; padding:0 0 1px; }
-.col-main { float:left; width:685px; padding:0 0 1px; }
-.col-right { float:right; width:195px; padding:0 0 1px; }
+.col-left { float:left; max-width:195px; padding:0 0 1px; }
+.col-main { float:left; max-width:685px; padding:0 0 1px; }
+.col-right { float:right; max-width:195px; padding:0 0 1px; }
 
 /* 1 Column Layout */
 .col1-layout .col-main { float:none; width:auto; }
