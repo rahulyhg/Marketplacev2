@@ -4,11 +4,29 @@
 }
 
 
+body {background: none 0 0 #ffffff; font: 13px 'Arial', serif;}
+
+.nav-container {background: none;}
+.main-container {background: none;}
+.main {background: none;}
+
+.header, .main, #nav, .footer {/* width: 1034px; */}
+
+/* .footer-container {border-top: 0px;}
+.header .logo img {display: none;}
+.header .quick-access {width: 530px;}
+.header a.logo {background: url("../images/shirt/Images.png") no-repeat scroll 0 0 transparent; display: block; width: 364px; height: 76px;}
+ */
+
+
+
 .navbar-default {max-width: 940px; margin-left: auto; margin-right: auto; background-color: auto;}
 
 
 /* HEADER */
-
+.header {padding: 0;}
+.header-container {background: #ffffff; border: none;}
+.header-top { height: 40px; margin: 0 auto; position: relative; border-bottom: 1px solid #ededed; background: #fbfbfb; }
 
 
 /* BANNER */
@@ -20,3 +38,7 @@
 
 
 /* FOOTER */
+.footer > ul.links {display: none;}
+.footer > address a {color: #309cbd; text-decoration: none; cursor: pointer;}
+.footer-container {background: #1d1e23; border: none;}
+.footer .bugs {display: none;}

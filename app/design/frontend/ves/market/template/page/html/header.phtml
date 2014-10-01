@@ -29,6 +29,17 @@
 ?>
 <div class="header-container">
     <div class="header">
+        <div class="row header-top">
+            <div class="col-sm-12">
+                <div class="container">
+                    <div class="col-left col-sm-4"><span></span>+1250 661 4401</div>
+                    <div class="col-right col-sm-8">
+                        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+                        <?php echo $this->getChildHtml('topLinks') ?>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-4">
             <?php if ($this->getIsHomePage()):?>
@@ -39,13 +50,14 @@
             </div>
 
             <div class="quick-access col-sm-8 col-xs-4">
-                <?php echo $this->getChildHtml('topSearch') ?>
-                <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
-                <?php echo $this->getChildHtml('topLinks') ?>
+                <?php //echo $this->getChildHtml('topSearch') ?>
+                <!-- <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p> -->
+                <?php //echo $this->getChildHtml('topLinks') ?>
+                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('static_header_block')->toHtml() ?>
                 <?php echo $this->getChildHtml('store_language') ?>
             </div>
 
-            <?php echo $this->getChildHtml('topContainer'); ?>
+            <?php //echo $this->getChildHtml('topContainer'); ?>
         </div> <!-- end row -->
     </div>
 </div>
