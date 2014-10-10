@@ -27,38 +27,47 @@
  * @var Mage_Page_Block_Html_Header $this
  */
 ?>
-<div class="header-container">
-    <div class="header">
-        <div class="row header-top">
+<div class="header-top">
+    <div class="wrapper tophead">
+        <div class="row">
             <div class="col-sm-12">
-                <div class="container">
-                    <div class="col-left col-sm-4"><span></span>+1250 661 4401</div>
-                    <div class="col-right col-sm-8">
-                        <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
-                        <?php echo $this->getChildHtml('topLinks') ?>
-                    </div>
+
+                <div class="left-col col-sm-4"><p><span></span>+1250 661 4401</p></div>
+                <div class="right-col col-sm-8 t-links">
+                    <p class="welcome-msg"><?php echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p>
+                    <?php echo $this->getChildHtml('topLinks') ?>
                 </div>
+
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-4">
-            <?php if ($this->getIsHomePage()):?>
-            <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
-            <?php else:?>
-            <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
-            <?php endif?>
-            </div>
+    </div>
+</div>
+<div class="header-container">
+    <div class="header head-bottom">
 
-            <div class="quick-access col-sm-8 col-xs-4">
-                <?php //echo $this->getChildHtml('topSearch') ?>
-                <!-- <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p> -->
-                <?php //echo $this->getChildHtml('topLinks') ?>
-                <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('static_header_block')->toHtml() ?>
-                <?php echo $this->getChildHtml('store_language') ?>
-            </div>
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col-sm-4">
+                    <?php if ($this->getIsHomePage()):?>
+                    <h1 class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a></h1>
+                    <?php else:?>
+                    <a href="<?php echo $this->getUrl('') ?>" title="<?php echo $this->getLogoAlt() ?>" class="logo"><strong><?php echo $this->getLogoAlt() ?></strong><img src="<?php echo $this->getLogoSrc() ?>" alt="<?php echo $this->getLogoAlt() ?>" /></a>
+                    <?php endif?>
+                    </div>
 
-            <?php //echo $this->getChildHtml('topContainer'); ?>
-        </div> <!-- end row -->
+                    <div class="quick-access col-sm-8 col-xs-4">
+                        <?php //echo $this->getChildHtml('topSearch') ?>
+                        <!-- <p class="welcome-msg"><?php //echo $this->getChildHtml('welcome') ?> <?php echo $this->getAdditionalHtml() ?></p> -->
+                        <?php //echo $this->getChildHtml('topLinks') ?>
+                        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('static_header_block')->toHtml() ?>
+                        <?php echo $this->getChildHtml('store_language') ?>
+                    </div>
+
+                    <?php //echo $this->getChildHtml('topContainer'); ?>
+                </div> <!-- end row -->
+            <!-- </div> -->
+
+
     </div>
 </div>
 <?php echo $this->getChildHtml('topMenu') ?>
