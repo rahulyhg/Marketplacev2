@@ -45,7 +45,8 @@ body {background: none 0 0 #ffffff; font: 13px 'Arial', serif;}
 .links a.top-link-checkout {padding-left: 17px; background: url("../images/marketplace/checkout.png") no-repeat scroll left center transparent;}
 
 .tophead .left-col p {line-height: 1;}
-.header .quick-access {/* max-width: 704px; */ width: auto; float: left; padding-top: 10px;}
+.header .quick-access {/* max-width: 704px; */ width: auto; float: left; padding-top: 10px; line-height: 1.35; font-size: 12px;}
+.header .quick-access p {margin-bottom: 0; color: #676767; text-shadow: 0 0 0 #666;}
 
 ul.static_header_block {position: relative; overflow: hidden; float: left;}
 ul.static_header_block li {font-size: 12px; color: #676767; padding: 17px 20px 17px 44px;
@@ -65,7 +66,7 @@ ul.static_header_block li.checkout a.carticon {width: 27px; height: 26px; float:
 /* navigation */
 .navbar-default {max-width: 940px; margin-left: auto; margin-right: auto; background-color: #1d1e23; background-image: none; border: none;}
 .nav-container {background: #1d1e23;}
-ul#nav {justify-content: space-between; display: flex; }
+ul#nav {justify-content: space-between;/*  display: flex; */ overflow: hidden;}
 ul#nav li { background: url("../images/marketplace/nav-seperate.png") no-repeat scroll right center transparent;}
 ul#nav li:last-child {background: none;}
 ul#nav li a {color: #ffffff; font-size: 14px; text-align: center; text-transform: uppercase;}
