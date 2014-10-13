@@ -44,6 +44,33 @@
     </reference>
 
 
+    <reference name="root">
+            <reference name="top.links">
+
+
+
+                <!-- Removes 'My Account' link - Default position: 10 -->
+
+
+                <!-- for Magento 1.4.x -->
+                <remove name="wishlist_link"/>
+
+                <!-- Removes 'My Cart' AND 'Checkout' links
+                Default position: 40 and 50 respectively -->
+                <remove name="checkout_cart_link"/>
+
+                <!-- To re-add 'My Cart' or 'Checkout' after removing both -->
+                <block type="checkout/links" name="checkout_cart_link_custom">
+                    <action method="addCartLink"></action>
+                    <action method="addCheckoutLink"></action>
+                </block>
+
+
+
+            </reference>
+        </reference>
+
+
   </default>
 
 
@@ -64,6 +91,7 @@
 
 
   </cms_index_index>
+
 
 
 </layout>
