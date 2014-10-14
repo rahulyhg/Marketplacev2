@@ -40,6 +40,11 @@
       <stylesheet>css/mycustom.css</stylesheet>
     </action>
 
+    <action method="addItem">
+      <type>skin_css</type>
+      <stylesheet>css/responsive.css</stylesheet>
+    </action>
+
 
     </reference>
 

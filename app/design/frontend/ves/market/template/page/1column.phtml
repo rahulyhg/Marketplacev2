@@ -39,19 +39,27 @@
 <div class="wrapper">
     <?php echo $this->getChildHtml('global_notices') ?>
     <div class="page">
+        <div class="shadow"></div>
+        <div class="swipe-left"></div>
         <?php echo $this->getChildHtml('header') ?>
         <div class="main-container col1-layout">
-            <div class="main">
-                <?php echo $this->getChildHtml('breadcrumbs') ?>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-main col-sm-12">
-                            <?php echo $this->getChildHtml('global_messages') ?>
-                            <?php echo $this->getChildHtml('content') ?>
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="main">
+                            <?php echo $this->getChildHtml('breadcrumbs') ?>
+
+
+                            <div class="col-main">
+                                <?php echo $this->getChildHtml('global_messages') ?>
+                                <?php echo $this->getChildHtml('content') ?>
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
-            </div>
+            <!-- </div> -->
         </div>
         <?php echo $this->getChildHtml('footer') ?>
         <?php echo $this->getChildHtml('global_cookie_notice') ?>

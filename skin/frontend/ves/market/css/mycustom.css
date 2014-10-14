@@ -66,7 +66,7 @@ ul.static_header_block li.checkout a.carticon {width: 27px; height: 26px; float:
 /* navigation */
 .navbar-default {max-width: 940px; margin-left: auto; margin-right: auto; background-color: #1d1e23; background-image: none; border: none;}
 .nav-container {background: #1d1e23;}
-ul#nav {justify-content: space-between;/*  display: flex; */ overflow: hidden;}
+ul#nav {justify-content: space-between;}
 ul#nav li { background: url("../images/marketplace/nav-seperate.png") no-repeat scroll right center transparent;}
 ul#nav li:last-child {background: none;}
 ul#nav li a {color: #ffffff; font-size: 14px; text-align: center; text-transform: uppercase;}
@@ -77,9 +77,60 @@ ul#nav > li:last-child {padding-right: 0;}
 
 
 
+.header-top .wrapper {max-width: 1096px;}
+.head-bottom {max-width: 1096px;}
+.navbar-default  {max-width: 1096px;}
+/* .main {max-width: 1096px;}
+.col-main {max-width: 1096px;} */
+.footer {max-width: 1096px;}
+
+
+
+
 /* CONTENT */
+.main {padding-left: 0; padding-right: 0;}
+.section-description {background: #efefef; width: 100%; text-align: center; padding: 20px 0;}
+
+.section-content {max-width: 1096px; margin: 0 auto;}
 
 
+.section-features  { overflow: hidden; min-height: 200px; padding: 75px 0 20px;  background: url("../images/marketplace/arrow.png") no-repeat scroll top center transparent;}
+.paypaladapt h3 {white-space: nowrap;}
+.section-features  h3{color: #252525; font-size: 20px; height: 30px; margin: 30px 0 8px; text-align: center; height: auto;}
+.section-features  p {text-align: center; color: #929292; width: 173px; margin: 15px auto; font-size: 13px; font-weight: 500;}
+.section-features span  {display: block; margin: 0 auto;}
+
+
+.selldashboard span.icon {width: 129px; height: 129px; background: url("../images/marketplace/seller.jpg") no-repeat scroll top center transparent;}
+.vendorcredit span.icon {width: 129px; height: 129px; background: url("../images/marketplace/vendor_credit.jpg") no-repeat scroll top center transparent;}
+.productmgr span.icon {width: 129px; height: 129px; background: url("../images/marketplace/product_manager.jpg") no-repeat scroll top center transparent;}
+.ordermgr span.icon {width: 129px; height: 129px; background: url("../images/marketplace/order_manager.jpg") no-repeat scroll top center transparent;}
+
+.vendormsg span.icon { width: 129px; height: 129px; background: url("../images/marketplace/vendor_mess.jpg") no-repeat scroll top center transparent;}
+.vendorcate span.icon { width: 129px; height: 129px; background: url("../images/marketplace/vendor_cate.jpg") no-repeat scroll top center transparent;}
+.vendorreview span.icon { width: 129px; height: 129px; background: url("../images/marketplace/vendor_review.jpg") no-repeat scroll top center transparent;}
+.vendorgroup span.icon { width: 129px; height: 129px; background: url("../images/marketplace/vendor_group.jpg") no-repeat scroll top center transparent;}
+
+.vendormulflat span.icon { width: 129px; height: 129px; background: url("../images/marketplace/flatrate_ship.jpg") no-repeat scroll top center transparent;}
+.vendormasterpass span.icon {width: 129px; height: 129px; background: url("../images/marketplace/vendor_masterpassword.jpg") no-repeat scroll top center transparent;}
+.selectasell span.icon {width: 129px; height: 129px; background: url("../images/marketplace/selectandsell.jpg") no-repeat scroll top center transparent;}
+.pricecomps span.icon { width: 129px; height: 129px; background: url("../images/marketplace/price_compare.jpg") no-repeat scroll top center transparent;}
+
+.vendormultiship span.icon { width: 129px; height: 129px; background: url("../images/marketplace/flatrate_multiship.jpg") no-repeat scroll top center transparent;}
+.vendorhome span.icon { width: 129px; height: 129px; background: url("../images/marketplace/vendor_homepage.jpg") no-repeat scroll top center transparent;}
+.vendormember span.icon { width: 129px; height: 129px; background: url("../images/marketplace/vendor_membership.jpg") no-repeat scroll top center transparent;}
+.vendorsubacc span.icon { width: 129px; height: 129px; background: url("../images/marketplace/vendor_subaccount.jpg") no-repeat scroll top center transparent;}
+
+.multilang span.icon {width: 129px; height: 129px; background: url("../images/marketplace/multilanguage.jpg") no-repeat scroll top center transparent;}
+.paypaladapt span.icon {width: 129px; height: 129px; background: url("../images/marketplace/paypal_payment.jpg") no-repeat scroll top center transparent;}
+
+
+/* testimonial */
+.section-testimonials  {text-align: center; background: #a1cd63; width: 100%;}
+
+
+/* pricing */
+.section-pricing {text-align: center; width: 100%; }
 
 /* FOOTER */
 .footer {max-width: auto;}
@@ -89,10 +140,3 @@ ul#nav > li:last-child {padding-right: 0;}
 .footer .bugs {display: none;}
 
 
-
-.header-top .wrapper {max-width: 1096px;}
-.head-bottom {max-width: 1096px;}
-.navbar-default  {max-width: 1096px;}
-.main {max-width: 1096px;}
-.col-main {max-width: 1096px;}
-.footer {max-width: 1096px;}
